@@ -5,6 +5,7 @@ import Link from "./Link";
 import { SelectedPage } from "@/shared/types";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import ActionButton from "@/shared/ActionButton";
+import { motion } from "framer-motion";
 
 
 type Props = {
@@ -68,7 +69,16 @@ const Navbar = ({isTopOfPage,selectedPage ,setSelectedPage}: Props) => {
         {/* {Mobile Menu Modle */}
 
         {!isAboveMediumScreens && isMenuToggled && (
-            <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-xl">
+            <motion.div 
+            className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-xl"
+            initial="hidden" 
+            whileInView='visible' 
+            viewport={{once: true,amount:0.5}} 
+            transition={{duration:0.5}}
+            variants={{
+            hidden:{opacity:0,x: 50},
+            visible:{opacity:1,x:0},
+            }}>
                 {/* {close icon} */}
                 <div className="flex justify-end p-12">
                     <button onClick={()=> setIsMenuToggled(!isMenuToggled)}>
@@ -82,7 +92,7 @@ const Navbar = ({isTopOfPage,selectedPage ,setSelectedPage}: Props) => {
                     <Link page = "Our Classes" selectedPage = {selectedPage} setSelectedPage={setSelectedPage}/>
                     <Link page = "Contact Us" selectedPage = {selectedPage} setSelectedPage={setSelectedPage}/>
                 </div>
-            </div>
+            </motion.div>
         )}
     </nav>
   )
