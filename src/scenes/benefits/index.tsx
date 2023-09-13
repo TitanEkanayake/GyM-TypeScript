@@ -115,18 +115,10 @@ const Benefits = ({setSelectedPage}: Props) => {
                         visible:{opacity:1,x:0},
                         }}>
                         <p className="my-5">
-                            Nascetur aenean massa auctor tincidunt. Iaculis potenti amet
-                            egestas ultrices consectetur adipiscing ultricies enim. Pulvinar
-                            fames vitae vitae quis. Quis amet vulputate tincidunt at in
-                            nulla nec. Consequat sed facilisis dui sit egestas ultrices
-                            tellus. Ullamcorper arcu id pretium sapien proin integer nisl.
-                            Felis orci diam odio.
+                        Within the walls of our gym, a powerful transformation unfolds every day. With millions of happy members dedicating themselves to their fitness journey, our facility has become a vibrant hub of health and well-being. From beginners taking their first steps towards fitness to seasoned athletes pushing their limits, we are a community united by the shared goal of getting fit and staying healthy. Together, we celebrate each milestone achieved, each ounce of sweat shed, and each smile of accomplishment. 
                         </p>
                         <p className="mb-5">
-                            Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
-                            tellus quam porttitor. Mauris velit euismod elementum arcu neque
-                            facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
-                            enim mattis odio in risus nunc.
+                        Join our ever-growing family of dedicated members and discover the joy of getting fit while being part of something truly extraordinary.
                         </p>
                         </motion.div>
                         {/* {Button} */}
